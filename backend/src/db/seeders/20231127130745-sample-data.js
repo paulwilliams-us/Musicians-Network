@@ -31,13 +31,13 @@ const AgentsData = [
 
     // type code here for "relation_many" field
 
-    Contact_Email: 'Erwin Schrodinger',
+    Contact_Email: 'Max von Laue',
 
-    Contact_Number: 'Charles Darwin',
+    Contact_Number: 'Joseph J. Thomson',
 
-    Business_Name: 'Euclid',
+    Business_Name: 'Charles Sherrington',
 
-    Address: 'B. F. Skinner',
+    Address: 'William Herschel',
   },
 
   {
@@ -51,13 +51,13 @@ const AgentsData = [
 
     // type code here for "relation_many" field
 
-    Contact_Email: 'Erwin Schrodinger',
+    Contact_Email: 'Robert Koch',
 
-    Contact_Number: 'Edward Teller',
+    Contact_Number: 'Max von Laue',
 
-    Business_Name: 'Stephen Hawking',
+    Business_Name: 'B. F. Skinner',
 
-    Address: 'Pierre Simon de Laplace',
+    Address: 'Francis Crick',
   },
 
   {
@@ -71,33 +71,13 @@ const AgentsData = [
 
     // type code here for "relation_many" field
 
-    Contact_Email: 'Willard Libby',
+    Contact_Email: 'Sigmund Freud',
 
-    Contact_Number: 'Wilhelm Wundt',
+    Contact_Number: 'Emil Fischer',
 
-    Business_Name: 'Claude Levi-Strauss',
+    Business_Name: 'Joseph J. Thomson',
 
-    Address: 'B. F. Skinner',
-  },
-
-  {
-    // type code here for "relation_one" field
-
-    business_info: 'Representing versatile vocalists.',
-
-    contact_details: '987-654-3210, jane@example.com',
-
-    // type code here for "relation_many" field
-
-    // type code here for "relation_many" field
-
-    Contact_Email: 'Max Delbruck',
-
-    Contact_Number: 'August Kekule',
-
-    Business_Name: 'John Dalton',
-
-    Address: 'Louis Pasteur',
+    Address: 'Theodosius Dobzhansky',
   },
 ];
 
@@ -125,14 +105,6 @@ const ApplicationsData = [
 
     status: 'accepted',
   },
-
-  {
-    // type code here for "relation_one" field
-
-    // type code here for "relation_one" field
-
-    status: 'rejected',
-  },
 ];
 
 const AvailabilityData = [
@@ -158,14 +130,6 @@ const AvailabilityData = [
     available_from: new Date('2023-10-01T00:00:00Z'),
 
     available_to: new Date('2023-10-31T23:59:59Z'),
-  },
-
-  {
-    // type code here for "relation_one" field
-
-    available_from: new Date('2023-09-01T00:00:00Z'),
-
-    available_to: new Date('2023-09-30T23:59:59Z'),
   },
 ];
 
@@ -196,16 +160,6 @@ const EventOrganizersData = [
     name: 'Tom Brown Entertainment',
 
     contact_details: '333-444-5555, tom@example.com',
-
-    // type code here for "relation_many" field
-  },
-
-  {
-    // type code here for "relation_one" field
-
-    name: 'John Doe Events',
-
-    contact_details: '123-456-7890, john@example.com',
 
     // type code here for "relation_many" field
   },
@@ -259,22 +213,6 @@ const EventsData = [
 
     // type code here for "relation_many" field
   },
-
-  {
-    name: 'Symphony Performance',
-
-    description: 'A symphony performance featuring classical music.',
-
-    start_date: new Date('2023-09-25T18:00:00Z'),
-
-    end_date: new Date('2023-09-25T21:00:00Z'),
-
-    // type code here for "relation_one" field
-
-    // type code here for "relation_one" field
-
-    // type code here for "relation_many" field
-  },
 ];
 
 const JobsData = [
@@ -293,9 +231,9 @@ const JobsData = [
 
     // type code here for "relation_many" field
 
-    instrument: 'Francis Crick',
+    instrument: 'Frederick Sanger',
 
-    Skills: 'Jean Baptiste Lamarck',
+    Skills: 'Marcello Malpighi',
   },
 
   {
@@ -313,9 +251,9 @@ const JobsData = [
 
     // type code here for "relation_many" field
 
-    instrument: 'Emil Fischer',
+    instrument: 'Archimedes',
 
-    Skills: 'Louis Victor de Broglie',
+    Skills: 'James Watson',
   },
 
   {
@@ -333,29 +271,9 @@ const JobsData = [
 
     // type code here for "relation_many" field
 
-    instrument: 'Ludwig Boltzmann',
+    instrument: 'Edward O. Wilson',
 
-    Skills: 'Max Planck',
-  },
-
-  {
-    title: 'Violinist for Symphony',
-
-    description: 'Looking for a talented violinist for a symphony performance.',
-
-    location: 'Cityburg',
-
-    date: new Date('2023-09-25T18:00:00Z'),
-
-    payment: 300,
-
-    // type code here for "relation_one" field
-
-    // type code here for "relation_many" field
-
-    instrument: 'Rudolf Virchow',
-
-    Skills: 'B. F. Skinner',
+    Skills: 'William Herschel',
   },
 ];
 
@@ -383,7 +301,7 @@ const MusiciansData = [
 
     // type code here for "relation_many" field
 
-    Skills: 'Archimedes',
+    Skills: 'Charles Lyell',
   },
 
   {
@@ -409,7 +327,7 @@ const MusiciansData = [
 
     // type code here for "relation_many" field
 
-    Skills: 'Arthur Eddington',
+    Skills: 'Rudolf Virchow',
   },
 
   {
@@ -435,33 +353,7 @@ const MusiciansData = [
 
     // type code here for "relation_many" field
 
-    Skills: 'Max von Laue',
-  },
-
-  {
-    // type code here for "relation_one" field
-
-    name: 'Susan Lee',
-
-    // type code here for "images" field
-
-    contact_details: '444-555-6666, susan@example.com',
-
-    resume: 'Violinist with classical and contemporary experience.',
-
-    education_training: 'M.A. in Music from Yale School of Music',
-
-    experience: 'Performed with orchestras and solo performances.',
-
-    instruments: 'Violin',
-
-    awards_credits: 'Best Violinist 2017',
-
-    // type code here for "files" field
-
-    // type code here for "relation_many" field
-
-    Skills: 'Galileo Galilei',
+    Skills: 'Erwin Schrodinger',
   },
 ];
 
@@ -471,22 +363,6 @@ const RsvpsData = [
 
     // type code here for "relation_one" field
 
-    response: 'not_attending',
-  },
-
-  {
-    // type code here for "relation_one" field
-
-    // type code here for "relation_one" field
-
-    response: 'not_attending',
-  },
-
-  {
-    // type code here for "relation_one" field
-
-    // type code here for "relation_one" field
-
     response: 'maybe_attending',
   },
 
@@ -495,7 +371,15 @@ const RsvpsData = [
 
     // type code here for "relation_one" field
 
-    response: 'maybe_attending',
+    response: 'attending',
+  },
+
+  {
+    // type code here for "relation_one" field
+
+    // type code here for "relation_one" field
+
+    response: 'not_attending',
   },
 ];
 
@@ -515,11 +399,11 @@ const VenuesData = [
 
     // type code here for "images" field
 
-    Venue_Type: 'John Bardeen',
+    Venue_Type: 'Charles Darwin',
 
-    Address: 'John Bardeen',
+    Address: 'William Harvey',
 
-    About: 'Johannes Kepler',
+    About: 'Andreas Vesalius',
   },
 
   {
@@ -537,11 +421,11 @@ const VenuesData = [
 
     // type code here for "images" field
 
-    Venue_Type: 'Linus Pauling',
+    Venue_Type: 'Konrad Lorenz',
 
-    Address: 'Paul Dirac',
+    Address: 'Carl Gauss (Karl Friedrich Gauss)',
 
-    About: 'Werner Heisenberg',
+    About: 'Sigmund Freud',
   },
 
   {
@@ -559,33 +443,11 @@ const VenuesData = [
 
     // type code here for "images" field
 
-    Venue_Type: 'Claude Bernard',
+    Venue_Type: 'Trofim Lysenko',
 
-    Address: 'Michael Faraday',
+    Address: 'Hans Selye',
 
-    About: 'Max Born',
-  },
-
-  {
-    // type code here for "relation_one" field
-
-    name: 'The Acoustic Lounge',
-
-    location: '321 Pine St, Villagetown',
-
-    capacity: 150,
-
-    equipment: 'Acoustic guitars, microphones, small PA system',
-
-    event_types: 'Acoustic Sessions, Open Mic Nights',
-
-    // type code here for "images" field
-
-    Venue_Type: 'Ernst Haeckel',
-
-    Address: 'Claude Levi-Strauss',
-
-    About: 'Jean Baptiste Lamarck',
+    About: 'Antoine Laurent Lavoisier',
   },
 ];
 
@@ -623,17 +485,6 @@ async function associateAgentWithUser() {
   });
   if (Agent2?.setUser) {
     await Agent2.setUser(relatedUser2);
-  }
-
-  const relatedUser3 = await Users.findOne({
-    offset: Math.floor(Math.random() * (await Users.count())),
-  });
-  const Agent3 = await Agents.findOne({
-    order: [['id', 'ASC']],
-    offset: 3,
-  });
-  if (Agent3?.setUser) {
-    await Agent3.setUser(relatedUser3);
   }
 }
 
@@ -674,17 +525,6 @@ async function associateApplicationWithJob() {
   if (Application2?.setJob) {
     await Application2.setJob(relatedJob2);
   }
-
-  const relatedJob3 = await Jobs.findOne({
-    offset: Math.floor(Math.random() * (await Jobs.count())),
-  });
-  const Application3 = await Applications.findOne({
-    order: [['id', 'ASC']],
-    offset: 3,
-  });
-  if (Application3?.setJob) {
-    await Application3.setJob(relatedJob3);
-  }
 }
 
 async function associateApplicationWithMusician() {
@@ -719,17 +559,6 @@ async function associateApplicationWithMusician() {
   });
   if (Application2?.setMusician) {
     await Application2.setMusician(relatedMusician2);
-  }
-
-  const relatedMusician3 = await Musicians.findOne({
-    offset: Math.floor(Math.random() * (await Musicians.count())),
-  });
-  const Application3 = await Applications.findOne({
-    order: [['id', 'ASC']],
-    offset: 3,
-  });
-  if (Application3?.setMusician) {
-    await Application3.setMusician(relatedMusician3);
   }
 }
 
@@ -766,17 +595,6 @@ async function associateAvailabilityWithMusician() {
   if (Availability2?.setMusician) {
     await Availability2.setMusician(relatedMusician2);
   }
-
-  const relatedMusician3 = await Musicians.findOne({
-    offset: Math.floor(Math.random() * (await Musicians.count())),
-  });
-  const Availability3 = await Availability.findOne({
-    order: [['id', 'ASC']],
-    offset: 3,
-  });
-  if (Availability3?.setMusician) {
-    await Availability3.setMusician(relatedMusician3);
-  }
 }
 
 async function associateEventOrganizerWithUser() {
@@ -811,17 +629,6 @@ async function associateEventOrganizerWithUser() {
   });
   if (EventOrganizer2?.setUser) {
     await EventOrganizer2.setUser(relatedUser2);
-  }
-
-  const relatedUser3 = await Users.findOne({
-    offset: Math.floor(Math.random() * (await Users.count())),
-  });
-  const EventOrganizer3 = await EventOrganizers.findOne({
-    order: [['id', 'ASC']],
-    offset: 3,
-  });
-  if (EventOrganizer3?.setUser) {
-    await EventOrganizer3.setUser(relatedUser3);
   }
 }
 
@@ -860,17 +667,6 @@ async function associateEventWithVenue() {
   if (Event2?.setVenue) {
     await Event2.setVenue(relatedVenue2);
   }
-
-  const relatedVenue3 = await Venues.findOne({
-    offset: Math.floor(Math.random() * (await Venues.count())),
-  });
-  const Event3 = await Events.findOne({
-    order: [['id', 'ASC']],
-    offset: 3,
-  });
-  if (Event3?.setVenue) {
-    await Event3.setVenue(relatedVenue3);
-  }
 }
 
 async function associateEventWithOrganizer() {
@@ -905,17 +701,6 @@ async function associateEventWithOrganizer() {
   });
   if (Event2?.setOrganizer) {
     await Event2.setOrganizer(relatedOrganizer2);
-  }
-
-  const relatedOrganizer3 = await EventOrganizers.findOne({
-    offset: Math.floor(Math.random() * (await EventOrganizers.count())),
-  });
-  const Event3 = await Events.findOne({
-    order: [['id', 'ASC']],
-    offset: 3,
-  });
-  if (Event3?.setOrganizer) {
-    await Event3.setOrganizer(relatedOrganizer3);
   }
 }
 
@@ -954,17 +739,6 @@ async function associateJobWithPosted_by() {
   if (Job2?.setPosted_by) {
     await Job2.setPosted_by(relatedPosted_by2);
   }
-
-  const relatedPosted_by3 = await Users.findOne({
-    offset: Math.floor(Math.random() * (await Users.count())),
-  });
-  const Job3 = await Jobs.findOne({
-    order: [['id', 'ASC']],
-    offset: 3,
-  });
-  if (Job3?.setPosted_by) {
-    await Job3.setPosted_by(relatedPosted_by3);
-  }
 }
 
 // Similar logic for "relation_many"
@@ -1001,17 +775,6 @@ async function associateMusicianWithUser() {
   });
   if (Musician2?.setUser) {
     await Musician2.setUser(relatedUser2);
-  }
-
-  const relatedUser3 = await Users.findOne({
-    offset: Math.floor(Math.random() * (await Users.count())),
-  });
-  const Musician3 = await Musicians.findOne({
-    order: [['id', 'ASC']],
-    offset: 3,
-  });
-  if (Musician3?.setUser) {
-    await Musician3.setUser(relatedUser3);
   }
 }
 
@@ -1050,17 +813,6 @@ async function associateRsvpWithEvent() {
   if (Rsvp2?.setEvent) {
     await Rsvp2.setEvent(relatedEvent2);
   }
-
-  const relatedEvent3 = await Events.findOne({
-    offset: Math.floor(Math.random() * (await Events.count())),
-  });
-  const Rsvp3 = await Rsvps.findOne({
-    order: [['id', 'ASC']],
-    offset: 3,
-  });
-  if (Rsvp3?.setEvent) {
-    await Rsvp3.setEvent(relatedEvent3);
-  }
 }
 
 async function associateRsvpWithUser() {
@@ -1096,17 +848,6 @@ async function associateRsvpWithUser() {
   if (Rsvp2?.setUser) {
     await Rsvp2.setUser(relatedUser2);
   }
-
-  const relatedUser3 = await Users.findOne({
-    offset: Math.floor(Math.random() * (await Users.count())),
-  });
-  const Rsvp3 = await Rsvps.findOne({
-    order: [['id', 'ASC']],
-    offset: 3,
-  });
-  if (Rsvp3?.setUser) {
-    await Rsvp3.setUser(relatedUser3);
-  }
 }
 
 async function associateVenueWithUser() {
@@ -1141,17 +882,6 @@ async function associateVenueWithUser() {
   });
   if (Venue2?.setUser) {
     await Venue2.setUser(relatedUser2);
-  }
-
-  const relatedUser3 = await Users.findOne({
-    offset: Math.floor(Math.random() * (await Users.count())),
-  });
-  const Venue3 = await Venues.findOne({
-    order: [['id', 'ASC']],
-    offset: 3,
-  });
-  if (Venue3?.setUser) {
-    await Venue3.setUser(relatedUser3);
   }
 }
 
