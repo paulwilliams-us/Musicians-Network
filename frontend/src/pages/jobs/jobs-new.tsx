@@ -35,21 +35,13 @@ import moment from 'moment';
 
 const initialValues = {
   title: '',
-
   description: '',
-
   location: '',
-
   date: '',
-
   payment: '',
-
   posted_by: '',
-
   applications: [],
-
   instrument: '',
-
   Skills: '',
 };
 
@@ -61,6 +53,7 @@ const JobsNew = () => {
     await dispatch(create(data));
     await router.push('/jobs/jobs-list');
   };
+
   return (
     <>
       <Head>
@@ -69,78 +62,104 @@ const JobsNew = () => {
       <SectionMain>
         <SectionTitleLineWithButton
           icon={mdiChartTimelineVariant}
-          title='New Item'
+          title="New Item"
           main
         >
           {''}
         </SectionTitleLineWithButton>
         <CardBox>
-          <Formik
-            initialValues={initialValues}
-            onSubmit={(values) => handleSubmit(values)}
-          >
-            <Form>
-              <FormField label='Title'>
-                <Field name='title' placeholder='Title' />
+          <Formik initialValues={initialValues} onSubmit={handleSubmit}>
+            <Form className="space-y-4">
+              <FormField label="Title">
+                <Field
+                  name="title"
+                  placeholder="Title"
+                  className="w-full p-2 border border-gray-300 rounded"
+                />
               </FormField>
 
-              <FormField label='Description' hasTextareaHeight>
+              <FormField label="Description" hasTextareaHeight>
                 <Field
-                  name='description'
-                  id='description'
+                  name="description"
+                  id="description"
                   component={RichTextField}
+                  className="w-full p-2 border border-gray-300 rounded"
                 ></Field>
               </FormField>
 
-              <FormField label='Location'>
-                <Field name='location' placeholder='Location' />
-              </FormField>
-
-              <FormField label='Date'>
-                <Field type='datetime-local' name='date' placeholder='Date' />
-              </FormField>
-
-              <FormField label='Payment'>
-                <Field type='number' name='payment' placeholder='Payment' />
-              </FormField>
-
-              <FormField label='PostedBy' labelFor='posted_by'>
+              <FormField label="Location">
                 <Field
-                  name='posted_by'
-                  id='posted_by'
+                  name="location"
+                  placeholder="Location"
+                  className="w-full p-2 border border-gray-300 rounded"
+                />
+              </FormField>
+
+              <FormField label="Date">
+                <Field
+                  type="datetime-local"
+                  name="date"
+                  placeholder="Date"
+                  className="w-full p-2 border border-gray-300 rounded"
+                />
+              </FormField>
+
+              <FormField label="Payment">
+                <Field
+                  type="number"
+                  name="payment"
+                  placeholder="Payment"
+                  className="w-full p-2 border border-gray-300 rounded"
+                />
+              </FormField>
+
+              <FormField label="Posted By" labelFor="posted_by">
+                <Field
+                  name="posted_by"
+                  id="posted_by"
                   component={SelectField}
                   options={[]}
                   itemRef={'users'}
+                  className="w-full p-2 border border-gray-300 rounded"
                 ></Field>
               </FormField>
 
-              <FormField label='Applications' labelFor='applications'>
+              <FormField label="Applications" labelFor="applications">
                 <Field
-                  name='applications'
-                  id='applications'
+                  name="applications"
+                  id="applications"
                   itemRef={'applications'}
                   options={[]}
                   component={SelectFieldMany}
+                  className="w-full p-2 border border-gray-300 rounded"
                 ></Field>
               </FormField>
 
-              <FormField label='Instrument'>
-                <Field name='instrument' placeholder='Instrument' />
+              <FormField label="Instrument">
+                <Field
+                  name="instrument"
+                  placeholder="Instrument"
+                  className="w-full p-2 border border-gray-300 rounded"
+                />
               </FormField>
 
-              <FormField label='Skills'>
-                <Field name='Skills' placeholder='Skills' />
+              <FormField label="Skills">
+                <Field
+                  name="Skills"
+                  placeholder="Skills"
+                  className="w-full p-2 border border-gray-300 rounded"
+                />
               </FormField>
 
               <BaseDivider />
               <BaseButtons>
-                <BaseButton type='submit' color='info' label='Submit' />
-                <BaseButton type='reset' color='info' outline label='Reset' />
+                <BaseButton type="submit" color="info" label="Submit" />
+                <BaseButton type="reset" color="info" outline label="Reset" />
                 <BaseButton
-                  type='reset'
-                  color='danger'
+                  type="reset"
+                  color="danger"
                   outline
-                  label='Cancel'
+                  label="Cancel"
                   onClick={() => router.push('/jobs/jobs-list')}
                 />
               </BaseButtons>
